@@ -6,6 +6,9 @@ let Movies = axios.get("https://api.themoviedb.org/3/movie/upcoming", {
     Authorization: `Bearer ${token}`,
     Accept: "application/json",
   },
+
+
 });
+
 
 export default { Movies };
