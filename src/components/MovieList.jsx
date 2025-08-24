@@ -28,7 +28,7 @@ function MovieList({ genreId }) {
                 onClick={() => {
                     slideLeft(elementRef.current)
                 }} />
-            <HiChevronRight className='text-gray-500 absolute mx-[-10px] right-0 mt-[120px] text-5xl cursor-pointer max-md:hidden'
+            <HiChevronRight className='text-gray-500 absolute mx-[-10px] right-0 mt-[120px] text-5xl cursor-pointer max-md:hidden z-1'
                 onClick={() => {
                     slideRight(elementRef.current)
                 }} />
