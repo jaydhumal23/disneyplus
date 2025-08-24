@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "./../assets/disney.png";
-import person from "./../assets/person.jpg";
+import person from "./../assets/person.png";
 import {
   HiHome,
   HiMagnifyingGlass,
@@ -93,7 +93,7 @@ export default function Header() {
       <img
         src={person}
         alt="image of user"
-        className="h-[50px] rounded-[500px] cursor-pointer  max-lg:h-[40px] self-center max-lg:mb-5 "
+        className="h-[44px] rounded-[500px] cursor-pointer  max-lg:h-[40px] self-center max-lg:mb-5 "
       />
     </div>
   );
