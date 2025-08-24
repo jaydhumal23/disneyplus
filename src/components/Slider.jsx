@@ -34,7 +34,7 @@ export default function Slider() {
   return (
     <div>
       <HiChevronLeft
-        className="text-gray-500 absolute mx-[-8px] left-0  mt-[150px] 2xl:mt-[180px]  text-5xl cursor-pointer  max-md:hidden"
+        className="text-gray-400 absolute mx-[-8px] left-0  mt-[150px] 2xl:mt-[180px]  text-5xl cursor-pointer  max-md:hidden"
         onClick={() => {
 
           slideLeft(elementRef.current)
@@ -42,7 +42,7 @@ export default function Slider() {
         }}
       />
       <HiChevronRight
-        className="text-gray-500 absolute mx-[-8px] right-0  mt-[150px] 2xl:mt-[180px]  text-5xl cursor-pointer  max-md:hidden"
+        className="text-gray-400 absolute mx-[-8px] right-0  mt-[150px] 2xl:mt-[180px]  text-5xl cursor-pointer  max-md:hidden"
         onClick={() => {
 
 
@@ -53,9 +53,9 @@ export default function Slider() {
 
         }}
       />
-      <div className="overflow-x-auto flex scrollbar-hide scroll-smooth transition-all duration-100 " ref={elementRef}>
+      <div className="overflow-x-auto flex scrollbar-hide scroll-smooth  transition-all duration-100 " ref={elementRef}>
         {movieList.map((items) => (
-          
+
           <img
             key={items.id}
             src={Movie_Url + items.backdrop_path}
