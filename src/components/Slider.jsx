@@ -59,7 +59,7 @@ export default function Slider() {
           <img
             key={items.id}
             src={Movie_Url + items.backdrop_path}
-            className="min-w-full  2xl:h-[420px] md:h-[350px] object-cover object-top p-8 rounded-[50px]"
+            className="min-w-full  2xl:h-[420px] md:h-[350px] object-cover object-top px-8 py-6 rounded-[50px]"
           />
         ))}
       </div>

@@ -46,12 +46,12 @@ export default function Header() {
     },
   ];
   return (
-    <div className="flex  items-center p-6 justify-between">
+    <div className="flex  items-center px-6 pt-1 justify-between">
       <div className=" flex gap-[40px] items-center  ">
         <img
           src={logo}
           alt="image of disney logo"
-          className="h-[60px]   object-cover  max-lg:h-[30px] max-lg:mb-5"
+          className="h-[50px]   object-cover  max-lg:h-[30px] max-lg:mb-5"
         />
         <div className="flex max-lg:hidden gap-8  ">
           {menu.map((items) => (
@@ -75,7 +75,7 @@ export default function Header() {
         >
           <HeaderItems name="" Icon={HiDotsVertical} />
           {togle ? (
-            <div className="absolute mt-5 border-[1px] border-gray-700 bg-[#121212e9]  px-8 py-7 rounded-2xl">
+            <div className="absolute mt-5 border-[1px] border-gray-700 bg-[#121212e9]  px-8 py-2 rounded-2xl">
               {menu.map(
                 (items, index) =>
                   index > 2 && (
