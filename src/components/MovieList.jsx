@@ -24,7 +24,7 @@ function MovieList({ genreId }) {
     }
     return (
         <div>
-            <HiChevronLeft className='text-gray-500 absolute mx-[-8px] mt-[120px] left-0 cursor-pointer text-5xl max-md:hidden'
+            <HiChevronLeft className='text-gray-500 absolute mx-[1px] mt-[120px] left-0 cursor-pointer text-5xl max-md:hidden z-1'
                 onClick={() => {
                     slideLeft(elementRef.current)
                 }} />
