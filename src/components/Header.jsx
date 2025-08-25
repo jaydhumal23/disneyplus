@@ -75,7 +75,7 @@ export default function Header() {
         >
           <HeaderItems name="" Icon={HiDotsVertical} />
           {togle ? (
-            <div className="absolute mt-5 border-[1px] border-gray-700 bg-[#121212e9]  px-8 py-2 rounded-2xl">
+            <div className="absolute mt-5 border-[1px] border-gray-700 bg-[#121212e9]  px-8 py-2 rounded-2xl max-sm:mr-2 max-sm:right-0">
               {menu.map(
                 (items, index) =>
                   index > 2 && (
