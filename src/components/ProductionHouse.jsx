@@ -43,7 +43,7 @@ export default function ProductionHouse() {
     ]
     return (
         <div className=''>
-            <div className='flex gap-7 max-md:gap-2 px-8 p-2 max-md:px-1 '>
+            <div className='flex gap-7 max-md:gap-2 px-8 p-1 max-md:px-1 '>
                 {list.map((data) => (
                     <div key={data.id} className='border-2 max-md:border-1 border-gray-500 bg-zinc-950 max-md:rounded-sm  rounded-xl trasition-all duration-[0.5s] hover:scale-110 curosr-pointer overflow-hidden shadow-xl shadow-gray-800 relative'>
                         <video src={data.video} autoPlay loop playsInline muted className='cursor-pointer absolute top-0 z-0 opacity-0 hover:opacity-40 object-cover w-full h-full' />

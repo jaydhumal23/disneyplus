@@ -56,7 +56,7 @@ export default function Slider() {
       <div className="overflow-x-auto flex scrollbar-hide scroll-smooth  transition-all duration-100 " ref={elementRef}>
         {movieList.map((items) => (
           <div className="px-8 max-md:px-2 min-w-full">
-          <div key={items.id} className="2xl:h-[420px] md:h-[350px]   my-6 rounded-2xl max-md:rounded-md overflow-hidden  w-full">
+          <div key={items.id} className="2xl:h-[420px] md:h-[350px]   my-6 rounded-2xl max-md:rounded-md overflow-hidden  w-full ">
             
           
           <img
