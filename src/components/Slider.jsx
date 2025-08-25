@@ -23,18 +23,20 @@ export default function Slider() {
 
   const slideRight = (element) => {
 
-    element.scrollLeft += Dimension;
+    element.scrollLeft += Dimension-110;
 
 
   };
   const slideLeft = (element) => {
 
-    element.scrollLeft -= Dimension;
+    element.scrollLeft -= Dimension-110;
   };
   return (
-    <div>
-      <HiChevronLeft
-        className="text-gray-400 absolute mx-[-8px] left-0  mt-[150px] 2xl:mt-[195px]  text-5xl cursor-pointer  max-md:hidden"
+ 
+        <div>
+      
+  <HiChevronLeft
+        className="text-gray-400 absolute mx-6 left-0  mt-[150px] 2xl:mt-[195px]  text-5xl cursor-pointer  max-md:hidden"
         onClick={() => {
 
           slideLeft(elementRef.current)
@@ -42,7 +44,7 @@ export default function Slider() {
         }}
       />
       <HiChevronRight
-        className="text-gray-400 absolute mx-[-8px] right-0  mt-[150px] 2xl:mt-[195px]  text-5xl cursor-pointer  max-md:hidden"
+        className="text-gray-400 absolute mx-4 right-0  mt-[150px] 2xl:mt-[195px]  text-5xl cursor-pointer  max-md:hidden"
         onClick={() => {
 
 
@@ -53,20 +55,15 @@ export default function Slider() {
 
         }}
       />
-      <div className="overflow-x-auto flex scrollbar-hide scroll-smooth  transition-all duration-100 " ref={elementRef}>
-        {movieList.map((items) => (
-      
-          <div key={items.id} className="2xl:h-[420px] md:h-[350px]  mx-8 max-md:mx-3  my-6 rounded-2xl max-md:rounded-xl overflow-hidden min-w-[95.6%] max-md:min-w-[97%]">
-            
-          
-          <img
-            
-            src={Movie_Url + items.backdrop_path}
-            className="w-full h-full  object-cover object-top"
-          />
-          </div>
+   
+    <div className='flex overflow-x-auto w-full px-16 py-4 max-sm:px-2
+    scrollbar-hide scroll-smooth' ref={elementRef}> 
+        {movieList.map((item)=>(
+            <img src={Movie_Url+item.backdrop_path} 
+            className='min-w-full  2xl:h-[420px] md:h-[350px] object-cover 
+            object-left-top mr-5 rounded-md '/>
         ))}
-      </div>
+    </div>
     </div>
   );
 }
