@@ -60,7 +60,7 @@ export default function Slider() {
     scrollbar-hide scroll-smooth' ref={elementRef}>
         {movieList.map((item) => (
           <img src={Movie_Url + item.backdrop_path}
-            className='min-w-full  2xl:h-[420px] md:h-[350px] object-cover 
+            className='min-w-full  2xl:h-[480px] md:h-[350px] object-cover 
             object-left-top mr-5 rounded-md '/>
         ))}
       </div>
