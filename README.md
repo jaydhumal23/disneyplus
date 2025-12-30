@@ -52,6 +52,6 @@ It is a purely client-side application deployed on **Vercel**.
 
 - **Responsive Design:** Fully responsive layout that works seamlessly on Desktop, Tablet, and Mobile devices.
 - **Real-time Data:** Fetches trending movies, top-rated shows, and genre-specific content dynamically from TMDB.
-- **Client-Side Architecture:** No backend server required; all data fetching logic is handled directly within the React client components.
+- **Client-Side Architecture:** No backend server required. All data fetching logic is handled directly within the React client components.
 
 ---
