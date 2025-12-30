@@ -5,7 +5,7 @@ This is a Disney+ inspired movie streaming interface built using React, Vite, an
 ### Getting Started
 
 To set up and run the project locally.
-
+<!--
 #### Clone the Repository
 
 ```bash
@@ -35,3 +35,4 @@ https://www.themoviedb.org/settings/api
 ```bash
 npm run dev
 ```
+-->
